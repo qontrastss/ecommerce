@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Bootstrap Store</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Fontawsome -->
+  <script src="https://kit.fontawesome.com/89b214bda7.js" crossorigin="anonymous"></script>
+
+  <!-- Boostrapt Skripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <a class="navbar-brand" href="index.html">Bootstrap Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collect the nav links, forms, and other content for
+  toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Categories <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="category.html">Apparel &amp; Accessories</a></li>
+              <li><a class="dropdown-item" href="category.html">Baby Products</a></li>
+              <li><a class="dropdown-item" href="category.html">Beauty &amp; Health</a></li>
+              <li><a class="dropdown-item" href="category.html">Electronics</a></li>
+              <li><a class="dropdown-item" href="category.html">Furniture</a></li>
+              <li><a class="dropdown-item" href="category.html">Home &amp; Garden</a></li>
+              <li><a class="dropdown-item" href="category.html">Luggage &amp; Bags</a></li>
+              <li><a class="dropdown-item" href="category.html">Shoes</a></li>
+              <li><a class="dropdown-item" href="category.html">Sports &amp; Entertainment</a></li>
+              <li><a class="dropdown-item" href="category.html">Watches</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html">All Categories</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart  fa-flip-horizontal"></i><span class="badge rounded-pill bg-secondary">4</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="account.html"><i class="fas fa-user"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Sign in</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="myModalLabel">Sign in</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <h3>Sign in with your email address</h3>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email address" aria-describedby="emailHelp" required autofocus>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="mb-3 form-check">
+              <label><input type="checkbox" class="form-check-input" value="remember-me"> Remember me</label>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="button" class="btn btn-lg btn-primary btn-block">Sign in</button>
+            </div>
+          </form>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="#" class="btn btn-lg btn-block">Facebook</a>
+            </div>
+            <div class="col-sm-3">
+              <a href="" class="btn btn-lg btn-block">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="content" class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-3">
+        <h3>Categories</h3>
+        <div class="list-group">
+          <a href="category.html" class="list-group-item">Apparel & Accessories</a>
+          <a href="category.html" class="list-group-item">Baby Products</a>
+          <a href="category.html" class="list-group-item">Beauty & Health</a>
+          <a href="category.html" class="list-group-item">Electronics</a>
+          <a href="category.html" class="list-group-item">Furniture</ a>
+            <a href="category.html" class="list-group-item">Home & Garden</a>
+            <a href="category.html" class="list-group-item">Luggage & Bags</a>
+            <a href="category.html" class="list-group-item">Shoes</a>
+            <a href="category.html" class="list-group-item">Sports & Entertainment</a>
+            <a href="category.html" class="list-group-item">Watches</a>
+        </div>
+      </div>
+
+
+      <div class="col-sm-8 col-md-9">
+        <div class="row">
+          <div class="img-thumbnail mb-3">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="img-thumbnail img-fluid" src="images/750x600.png" alt="" />
+                <div class="thumbnails row">
+                  <div class="col-md-3">
+                    <a href="#"><img src="images/750x600.png" alt="" class="img-thumbnail img-fluid" /></a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#"><img src="images/750x600.png" alt="" class="img-thumbnail img-fluid" /></a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#"><img src="images/750x600.png" alt="" class="img-thumbnail img-fluid" /></a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#"><img src="images/750x600.png" alt="" class="img-thumbnail img-fluid" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="float-end">$24.99</h4>
+                <h4><a href="product.html">Product Name</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <form role="form">
+                  <div class="form-group mb-3">
+                    <label><b>Number</b></label>
+                    <input type="number" class="form-control input-sm" id="number">
+                  </div>
+                  <div class="form-group mb-3">
+                    <label><b>Color</b></label>
+                    <select class="form-select">
+                      <option name="color">Blue</option>
+                      <option name="color">Green</option>
+                      <option name="color">Red</option>
+                      <option name="color">Yellow</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label><b>Size</b></label>
+                    <br>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-primary">XS</ button>
+                        <button type="button" class="btn btn-outline-primary">S</ button>
+                          <button type="button" class="btn btn-outline-primary">M</ button>
+                            <button type="button" class="btn btn-outline-primary">L</ button>
+                              <button type="button" class="btn btn-outline-primary">XL</ button>
+                    </div>
+                  </div>
+                  <div class="form-group mb-3">
+                    <button type="submit" class="btn btn-outline-dark">Contact Seller</button>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="description mt-3">
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Cras interdum cursus est, facilisis
+                imperdiet diam fringilla vel. Proin ut sagittis nibh, vehicula euismod
+                sapien. Cras commodo pellentesque aliquet. Nullam interdum urna et
+                nibh dictum, id feugiat risus volutpat. Nulla ac velit fringilla,
+                efficitur arcu a, ultrices erat. Vestibulum elementum metus suscipit
+                purus vehicula faucibus. Ut lobortis hendrerit magna. In ac urna non
+                est malesuada maximus in ut nulla.
+              </p>
+
+            </div>
+            <div class="ratings">
+              <p class="float-end">3 reviews</p>
+              <p>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="far fa-star"></i></span>
+                4.0 stars
+              </p>
+            </div>
+          </div>
+
+          <div class="card bg-light text-end">
+            <div class="card-body">
+              <a type="submit" class="btn btn-success ">Leave a Review</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 mt-3 mb-3">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+              David More
+              <span class="float-end">1 day ago</span>
+              <p>From <em>United States</em></p>
+              <p>This product was great in terms of quality. I would
+                definitely buy another!</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-12 mt-3 mb-3">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+              John Doe
+              <span class="float-end">2 days ago</span>
+              <p>From <em>Australia</em></p>
+              <p>I've already ordered another one!</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-12 mt-3 mb-3">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+              Jane Dwayne
+              <span class="float-end">5 days ago</span>
+              <p>From <em>United Kingdom</em></p>
+              <p>I've seen some better than this, but not at this
+                price. I definitely recommend this item.</p>
+            </div>
+          </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="img-thumbnail">
+                  <img class="img-fluid" src="images/750x600.png" alt="">
+                  <div class="add-to-cart">
+                    <a class="d-flex justify-content-center" href="#" data-toggle="tooltip" title="Add to cart"><i class="fas fa-plus-circle fa-2x"></i></a>
+                  </div>
+                  <div class="caption-top">
+                    <h4 class="float-end">$24.99</h4>
+                    <h4><a href="product.html">1<sup>st</sup> Product</a>
+                    </h4>
+                    <p>This is a short description. Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit.</p>
+                    <div class="data-mdb-toggle=" rating"">
+                      <p class="float-end"><a href="product.html#comments">15 reviews</a></p>
+                      <p>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="img-thumbnail">
+                  <img class="img-fluid" src="images/750x600.png" alt="">
+                  <div class="add-to-cart">
+                    <a class="d-flex justify-content-center" href="#" data-toggle="tooltip" title="Add to cart"><i class="fas fa-plus-circle fa-2x"></i></a>
+                  </div>
+                  <div class="caption-top">
+                    <h4 class="float-end">$24.99</h4>
+                    <h4><a href="product.html">1<sup>st</sup> Product</a>
+                    </h4>
+                    <p>This is a short description. Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit.</p>
+                    <div class="data-mdb-toggle=" rating"">
+                      <p class="float-end"><a href="product.html#comments">15 reviews</a></p>
+                      <p>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="img-thumbnail">
+                  <img class="img-fluid" src="images/750x600.png" alt="">
+                  <div class="add-to-cart">
+                    <a class="d-flex justify-content-center" href="#" data-toggle="tooltip" title="Add to cart"><i class="fas fa-plus-circle fa-2x"></i></a>
+                  </div>
+                  <div class="caption-top">
+                    <h4 class="float-end">$24.99</h4>
+                    <h4><a href="product.html">1<sup>st</sup> Product</a>
+                    </h4>
+                    <p>This is a short description. Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit.</p>
+                    <div class="data-mdb-toggle=" rating"">
+                      <p class="float-end"><a href="product.html#comments">15 reviews</a></p>
+                      <p>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+    </div><!-- /.container class with content as the id-->
+
+    <div class="container">
+      <hr />
+      <!-- Footer -->
+      <footer>
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <p>Copyright &copy; <a href="index.html">Packt
+                Publishing</a> 2014</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+</body>
+
+</html>
